@@ -11,19 +11,21 @@
     list-style: none;
 }
 
+html, body{
+    margin: 0;
+}
+
+
 body {
     color: rgb(236, 240, 241);
 }
 
 .cover{
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
+    min-height: 100%;
+    min-width: 100%;
     background-image: linear-gradient(#005792, #43658B, #125D98, #5F9DF7, #3E6D9C);
-    width: 100%;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
 }
 
 header{
@@ -163,6 +165,8 @@ header{
 .button{
     transition: all .60s ease;
     position: relative;
+    left: -220px;
+    top: 20px;
 
 }
 
@@ -419,13 +423,12 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
 }
 
 footer ul{
@@ -491,8 +494,7 @@ footer ul{
 }
 
 .skills{
-    min-width:10em;
-    max-width: 26em;
+    width: 26em;
     margin: auto;
     margin-top: 5em;
     padding: 1em;
@@ -533,6 +535,12 @@ footer ul{
     width: 80%;
 }
 
+.left-home-section{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
 
 
 
@@ -557,7 +565,7 @@ footer ul{
 
     .img-home-img{
         min-width: 100px;
-        max-width: 300px;
+        max-width: 250px;
     }
 
     .home-text{
@@ -577,11 +585,14 @@ footer ul{
         font-size: 2em;
         border-bottom: 2px solid white;
         transition: all 0.6s ease;
+        margin-top: -150px;
     }
 
     .about-me-text{
+
         font-size: 1.2em;
         transition: all 0.6s ease;
+        margin-top: -60px;
     }
 
     .main-text h2{
@@ -593,6 +604,7 @@ footer ul{
         max-width: 100%;
         max-height: 80%;   
         gap: 2em;
+        margin-top: -70px;
     }
 
     .portfolio-img{ 
@@ -622,8 +634,56 @@ footer ul{
     }    
 
     .skills{
-        display: none;
+        max-width: 10em;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
+
+    .my-name-x{
+        font-size: 2.1em;
+        transition: all .50s ease;
+    }
+
+    .one{
+        font-size: 1.3em;
+    }
+    
+    .two{
+        font-size: 2em;
+        color: #E59866;
+    }
+
+    .info-me{
+        font-size: 1.5em;
+        margin-bottom: -50px;
+        color: #E59866;
+        transition: all .60s ease;
+    }
+
+    .home-text{
+        margin-top: 0;
+    }
+
+    .skills{
+        max-width: 15em;
+    }    
+
+    .left-home-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        position: relative;
+
+        top: 40px;
+
+    }
+
+
+
+
 }
 
 
@@ -643,7 +703,7 @@ footer ul{
 
     .img-home-img{
         min-width: 100px;
-        max-width: 30em;
+        max-width: 23em;
     }
 
     .home-text{
@@ -651,7 +711,7 @@ footer ul{
     }
 
     .my-name-x{
-        font-size: 4rem;
+        font-size: 4em;
     }
 
     .about-me-title{
@@ -703,10 +763,20 @@ footer ul{
         font-size: 44px;
     }
 
-    .skills{
-        display: none;
+    .left-home-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
+    .info-me{
+        font-size: 3em;
+        margin-bottom: -50px;
+    }
+
+
+    
 
 }
 
@@ -715,9 +785,7 @@ footer ul{
 @media only screen and (min-width:1023px) and (max-width:1439px) {
 
 
-    .home{
-        flex-wrap: nowrap;
-    }
+ 
 
     .img-home-img{
         min-width: 100px;
@@ -793,4 +861,25 @@ footer ul{
     .form-container input{
         font-size: 44px;
     }
+
+    .left-home-section{
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-me{
+        font-size: 3em;
+        margin-bottom: -50px;
+    }
+
+    .button{
+        transition: all .60s ease;
+        position: relative;
+        left: 40px;
+        top: 30px;
+    
+    }
+
 }
