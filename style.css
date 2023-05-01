@@ -557,11 +557,11 @@ footer ul{
 
     .img-home-img{
         min-width: 100px;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .home-text{
-        max-width: 100%;
+        max-width: 80%;
         padding-left: 1.2em;
     }
 
